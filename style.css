@@ -243,3 +243,29 @@ footer {
         height: auto;
     }
 }
+
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+
+    .project-card,
+    .contact {
+        width: 95%;
+        margin: auto;
+    }
+
+    p,
+    a {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .contact a {
+        font-size: 18px;
+    }
+
+    .project-card p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
