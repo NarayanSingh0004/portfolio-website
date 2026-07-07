@@ -1,7 +1,7 @@
- html{
+html{
     scroll-behavior:smooth;
  }
- *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -46,6 +46,12 @@ nav ul li a {
     font-size: 35px;
     font-weight: bold;
     color: white;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    transform: scale(1.15);
+    color: aqua;
 }
 
 /* Home */
@@ -79,7 +85,7 @@ nav ul li a {
     max-height: 100vh;
     max-width: 800px;
     line-height: 1.8;
-    font-size: 28px;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 .home p{
@@ -103,41 +109,40 @@ nav ul li a {
 .profile-pic:hover{
     transform: scale(1.15);
 }
-
-.home span {
-
-    font-size: 55px;
-    color: yellow;
-}
-
 .btn {
     margin-top: 20px;
     padding: 10px 20px;
     border-radius:5px;
     background:orange;
     color: white;
-    display: inline-block;
+    display:inline-block;
     cursor: pointer;
     font-weight: 10px;
     font-size: 35px;
-    box-shadow: 0 6px 16px orange;
+    text-decoration: none;
+    box-shadow: 0 4px 14px orange;
     transition: 0.3s ease;
 }
 .btn:hover{
     transform: scale(1.15);
-    background-color: antiquewhite;
+    background-color: rgb(213, 198, 178);
+}
+.button{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
 }
 
 
 
 
 #about h2{
-    font-size:40px;
+    font-size:47px;
 }
 #about p{
-    font-size: 30px;
+    font-size: 32px;
 }
-
 
 /* Sections */
 section {
@@ -242,4 +247,26 @@ footer {
         max-width: 100%;
         height: auto;
     }
+
+    .projects,
+    .contact{
+        width: 95%;
+        margin: auto;
+    }
+
+    .project-card{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-card p,
+    .contact p,
+    .contact a{
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+
+
 }
